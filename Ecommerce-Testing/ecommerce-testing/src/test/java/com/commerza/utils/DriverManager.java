@@ -23,6 +23,7 @@ public class DriverManager {
     }
     
     private static void initializeDriver() {
+        // Ensure any machine-level proxy settings don't break driver downloads
         System.setProperty("java.net.useSystemProxies", "false");
         System.clearProperty("http.proxyHost");
         System.clearProperty("http.proxyPort");
@@ -35,7 +36,7 @@ public class DriverManager {
         switch (browser) {
             case "chrome":
                 WebDriverManager.chromedriver()
-                        .avoidShutdownHook() 
+                        .avoidShutdownHook() // keep cache between runs
                         .setup();
                 ChromeOptions chromeOptions = new ChromeOptions();
                 if (headless) {
