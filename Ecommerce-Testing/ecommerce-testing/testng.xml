@@ -16,10 +16,10 @@
         </classes>
     </test>
     
-    <!-- Shopping Cart & Checkout (Team3Runner) -->
+    <!-- Shopping Cart & Checkout (ShoppingCart) -->
     <test name="Cart &amp; Checkout Tests" preserve-order="true">
         <classes>
-            <class name="com.commerza.runners.Team3Runner"/>
+            <class name="com.commerza.runners.ShoppingCart"/>
         </classes>
     </test>
     
