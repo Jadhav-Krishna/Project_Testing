@@ -26,7 +26,7 @@
     <!-- Admin Panel & Order Management (Team4Runner) -->
     <test name="Admin &amp; Fulfilment Tests" preserve-order="true">
         <classes>
-            <class name="com.commerza.runners.Team4Runner"/>
+            <class name="com.commerza.runners.AdminPannel"/>
         </classes>
     </test>
     

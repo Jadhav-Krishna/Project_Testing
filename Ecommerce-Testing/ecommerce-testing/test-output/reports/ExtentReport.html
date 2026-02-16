@@ -1,0 +1,3750 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>E-commerce Test Reports</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report dark">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Selenium Cucumber Test Automation Report</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Feb 16, 2026 10:42:13</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Feb 16, 2026 10:42:13</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Feb 16, 2026 10:42:20</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>1</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>0</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'>
+<b>1</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='0%'><b>0</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'><b>38</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'><b>278</b> steps passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> steps failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Admin Panel and Order Management":5.38
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@CustomerManagement</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@ProductManagement</td>
+<td>9</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@AdminTest</td>
+<td>38</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Smoke</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Regression</td>
+<td>32</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@AdminLogout</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Dashboard</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@CategoryManagement</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Reports</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@NegativeTesting</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@ContentManagement</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@OrderManagement</td>
+<td>11</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@AdminLogin</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>AppName</td>
+<td>E-commerce Platform</td>
+</tr>
+<tr>
+<td>user</td>
+<td>QA Team</td>
+</tr>
+<tr>
+<td>build</td>
+<td>1.0.0</td>
+</tr>
+<tr>
+<td>os</td>
+<td>Windows</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 1,
+failParent: 0,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 38,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 278,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script><div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@CustomerManagement</a><a class="dropdown-item" href="#">@ProductManagement</a><a class="dropdown-item" href="#">@AdminTest</a><a class="dropdown-item" href="#">@Smoke</a><a class="dropdown-item" href="#">@Regression</a><a class="dropdown-item" href="#">@AdminLogout</a><a class="dropdown-item" href="#">@Dashboard</a><a class="dropdown-item" href="#">@CategoryManagement</a><a class="dropdown-item" href="#">@Reports</a><a class="dropdown-item" href="#">@NegativeTesting</a><a class="dropdown-item" href="#">@ContentManagement</a><a class="dropdown-item" href="#">@OrderManagement</a><a class="dropdown-item" href="#">@AdminLogin</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Admin Panel and Order Management</p>
+            <p class="text-sm">
+              <span>10:42:14 AM</span> / <span>00:00:05:380</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Admin Panel and Order Management</h5>
+<span class='badge badge-success'>02.16.2026 10:42:14 AM</span>
+<span class='badge badge-danger'>02.16.2026 10:42:20 AM</span>
+<span class='badge badge-default'>00:00:05:380</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"> As an admin
+I want to manage products, orders, and website content
+So that I can operate the e-commerce platform effectively</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Successful admin login with valid credentials</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_navigates_to_admin_login_page()">
+                <span>Given the admin navigates to admin login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_enters_admin_email(java.lang.String)">
+                <span>When the admin enters admin email "admin@commerza.com"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_enters_admin_password(java.lang.String)">
+                <span>And the admin enters admin password "Admin@123"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_clicks_on_admin_login_button()">
+                <span>And the admin clicks on admin login button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_should_be_logged_in_successfully()">
+                <span>Then the admin should be logged in successfully</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_should_see_the_admin_dashboard()">
+                <span>And the admin should see the admin dashboard</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="11"><span class="badge log pass-bg mr-2">Pass</span>Admin login with invalid credentials</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_navigates_to_admin_login_page()">
+                <span>Given the admin navigates to admin login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_enters_admin_email(java.lang.String)">
+                <span>When the admin enters admin email "invalid@commerza.com"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_enters_admin_password(java.lang.String)">
+                <span>And the admin enters admin password "WrongPassword"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_clicks_on_admin_login_button()">
+                <span>And the admin clicks on admin login button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_should_see_admin_login_error_message()">
+                <span>Then the admin should see admin login error message</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_should_not_be_able_to_access_dashboard()">
+                <span>And the admin should not be able to access dashboard</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="20"><span class="badge log pass-bg mr-2">Pass</span>Admin forgot password</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_navigates_to_admin_login_page()">
+                <span>Given the admin navigates to admin login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_clicks_on_admin_forgot_password_link()">
+                <span>When the admin clicks on admin forgot password link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_enters_admin_email_for_reset(java.lang.String)">
+                <span>And the admin enters admin email for reset "admin@commerza.com"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_clicks_on_send_admin_reset_link()">
+                <span>And the admin clicks on send admin reset link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_should_see_password_reset_email_confirmation()">
+                <span>Then the admin should see password reset email confirmation</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="28"><span class="badge log pass-bg mr-2">Pass</span>Add new product</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_navigates_to_admin_login_page()">
+                <span>Given the admin navigates to admin login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_is_logged_in_to_admin_panel()">
+                <span>Given the admin is logged in to admin panel</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_navigates_to_products_management_section()">
+                <span>When the admin navigates to products management section</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_clicks_on_add_new_product_button()">
+                <span>And the admin clicks on add new product button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_enters_product_details(io.cucumber.datatable.DataTable)">
+                <span>And the admin enters product details</span>
+      <div><table class='markup-table table '><tr><td>Field</td><td>Value</td></tr><tr><td>Product Name</td><td>Premium Automatic Watch</td></tr><tr><td>SKU</td><td>PAW-001</td></tr><tr><td>Price</td><td>4500</td></tr><tr><td>Category</td><td>Automatic</td></tr><tr><td>Description</td><td>Elegant automatic watch</td></tr><tr><td>Stock Quantity</td><td>50</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_uploads_product_images()">
+                <span>And the admin uploads product images</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_clicks_save_product_button()">
+                <span>And the admin clicks save product button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_product_should_be_added_successfully()">
+                <span>Then the product should be added successfully</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_should_see_success_message(java.lang.String)">
+                <span>And the admin should see success message "Product added"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="40"><span class="badge log pass-bg mr-2">Pass</span>Edit existing product</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_navigates_to_admin_login_page()">
+                <span>Given the admin navigates to admin login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_is_logged_in_to_admin_panel()">
+                <span>Given the admin is logged in to admin panel</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.there_are_existing_products_in_the_system()">
+                <span>And there are existing products in the system</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_navigates_to_products_management_section()">
+                <span>When the admin navigates to products management section</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_clicks_on_edit_button_for_a_product()">
+                <span>And the admin clicks on edit button for a product</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_updates_product_name_to(java.lang.String)">
+                <span>And the admin updates product name to "Updated Watch Name"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_updates_product_price_to(java.lang.String)">
+                <span>And the admin updates product price to "5000"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_clicks_update_product_button()">
+                <span>And the admin clicks update product button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_product_should_be_updated_successfully()">
+                <span>Then the product should be updated successfully</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_updated_details_should_be_saved()">
+                <span>And the updated details should be saved</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="53"><span class="badge log pass-bg mr-2">Pass</span>Delete product</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_navigates_to_admin_login_page()">
+                <span>Given the admin navigates to admin login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_is_logged_in_to_admin_panel()">
+                <span>Given the admin is logged in to admin panel</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.there_are_existing_products_in_the_system()">
+                <span>And there are existing products in the system</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_navigates_to_products_management_section()">
+                <span>When the admin navigates to products management section</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_clicks_on_delete_button_for_a_product()">
+                <span>And the admin clicks on delete button for a product</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_confirms_deletion()">
+                <span>And the admin confirms deletion</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_product_should_be_deleted_successfully()">
+                <span>Then the product should be deleted successfully</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_product_should_no_longer_appear_in_product_list()">
+                <span>And the product should no longer appear in product list</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="64"><span class="badge log pass-bg mr-2">Pass</span>Update product stock</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_navigates_to_admin_login_page()">
+                <span>Given the admin navigates to admin login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_is_logged_in_to_admin_panel()">
+                <span>Given the admin is logged in to admin panel</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_navigates_to_products_management_section()">
+                <span>When the admin navigates to products management section</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_clicks_on_a_product_to_edit()">
+                <span>And the admin clicks on a product to edit</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_updates_stock_quantity_to(java.lang.String)">
+                <span>And the admin updates stock quantity to "100"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_clicks_save_changes()">
+                <span>And the admin clicks save changes</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_stock_quantity_should_be_updated()">
+                <span>Then the stock quantity should be updated</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_updated_stock_should_be_reflected()">
+                <span>And the updated stock should be reflected</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="75"><span class="badge log pass-bg mr-2">Pass</span>Set product as featured</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_navigates_to_admin_login_page()">
+                <span>Given the admin navigates to admin login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_is_logged_in_to_admin_panel()">
+                <span>Given the admin is logged in to admin panel</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_navigates_to_products_management_section()">
+                <span>When the admin navigates to products management section</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_selects_a_product()">
+                <span>And the admin selects a product</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_marks_product_as_featured()">
+                <span>And the admin marks product as featured</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_saves_changes()">
+                <span>And the admin saves changes</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_product_should_appear_in_featured_section()">
+                <span>Then the product should appear in featured section</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="85"><span class="badge log pass-bg mr-2">Pass</span>Add product with missing required fields</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="86"><span class="badge log pass-bg mr-2">Pass</span>Add product with missing required fields</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given the admin navigates to admin login page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Given the admin is logged in to admin panel</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the admin navigates to products management section</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And the admin clicks on add new product button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And the admin leaves "Product Name" empty</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And the admin clicks save product button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then the admin should see validation error for "Product Name"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="96"><span class="badge log pass-bg mr-2">Pass</span>Add product with missing required fields</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given the admin navigates to admin login page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Given the admin is logged in to admin panel</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the admin navigates to products management section</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And the admin clicks on add new product button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And the admin leaves "Price" empty</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And the admin clicks save product button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then the admin should see validation error for "Price"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="106"><span class="badge log pass-bg mr-2">Pass</span>Add product with missing required fields</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given the admin navigates to admin login page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Given the admin is logged in to admin panel</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the admin navigates to products management section</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And the admin clicks on add new product button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And the admin leaves "Category" empty</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And the admin clicks save product button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then the admin should see validation error for "Category"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="116"><span class="badge log pass-bg mr-2">Pass</span>Add product with missing required fields</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given the admin navigates to admin login page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Given the admin is logged in to admin panel</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the admin navigates to products management section</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And the admin clicks on add new product button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And the admin leaves "Stock Quantity" empty</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And the admin clicks save product button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then the admin should see validation error for "Stock Quantity"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="126"><span class="badge log pass-bg mr-2">Pass</span>View all orders</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_navigates_to_admin_login_page()">
+                <span>Given the admin navigates to admin login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_is_logged_in_to_admin_panel()">
+                <span>Given the admin is logged in to admin panel</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_navigates_to_orders_management_section()">
+                <span>When the admin navigates to orders management section</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_should_see_list_of_all_orders()">
+                <span>Then the admin should see list of all orders</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.each_order_should_display_order_number()">
+                <span>And each order should display order number</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.each_order_should_display_customer_name()">
+                <span>And each order should display customer name</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.each_order_should_display_order_date()">
+                <span>And each order should display order date</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.each_order_should_display_order_status()">
+                <span>And each order should display order status</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.each_order_should_display_total_amount()">
+                <span>And each order should display total amount</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="138"><span class="badge log pass-bg mr-2">Pass</span>View order details</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_navigates_to_admin_login_page()">
+                <span>Given the admin navigates to admin login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_is_logged_in_to_admin_panel()">
+                <span>Given the admin is logged in to admin panel</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.there_are_orders_in_the_system()">
+                <span>And there are orders in the system</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_navigates_to_orders_management_section()">
+                <span>When the admin navigates to orders management section</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_clicks_on_an_order_to_view_details()">
+                <span>And the admin clicks on an order to view details</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_should_see_complete_order_information()">
+                <span>Then the admin should see complete order information</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.order_details_should_include_customer_information()">
+                <span>And order details should include customer information</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.order_details_should_include_shipping_address()">
+                <span>And order details should include shipping address</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.order_details_should_include_order_items()">
+                <span>And order details should include order items</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.order_details_should_include_payment_method()">
+                <span>And order details should include payment method</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="151"><span class="badge log pass-bg mr-2">Pass</span>Update order status</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_navigates_to_admin_login_page()">
+                <span>Given the admin navigates to admin login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_is_logged_in_to_admin_panel()">
+                <span>Given the admin is logged in to admin panel</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.there_are_pending_orders()">
+                <span>And there are pending orders</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_navigates_to_orders_management_section()">
+                <span>When the admin navigates to orders management section</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_clicks_on_an_order()">
+                <span>And the admin clicks on an order</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_changes_order_status_to(java.lang.String)">
+                <span>And the admin changes order status to "Processing"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_saves_the_changes()">
+                <span>And the admin saves the changes</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_order_status_should_be_updated_to(java.lang.String)">
+                <span>Then the order status should be updated to "Processing"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_customer_should_receive_status_update_notification()">
+                <span>And the customer should receive status update notification</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="163"><span class="badge log pass-bg mr-2">Pass</span>Change order status through workflow</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="164"><span class="badge log pass-bg mr-2">Pass</span>Change order status through workflow</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given the admin navigates to admin login page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Given the admin is logged in to admin panel</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And there is an order with status "Pending"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the admin updates the order status to "Processing"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then the order status should change to "Processing"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And the status timeline should be updated</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="173"><span class="badge log pass-bg mr-2">Pass</span>Change order status through workflow</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given the admin navigates to admin login page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Given the admin is logged in to admin panel</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And there is an order with status "Processing"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the admin updates the order status to "Shipped"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then the order status should change to "Shipped"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And the status timeline should be updated</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="182"><span class="badge log pass-bg mr-2">Pass</span>Change order status through workflow</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given the admin navigates to admin login page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Given the admin is logged in to admin panel</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And there is an order with status "Shipped"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the admin updates the order status to "Delivered"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then the order status should change to "Delivered"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And the status timeline should be updated</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="191"><span class="badge log pass-bg mr-2">Pass</span>Search orders by order number</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_navigates_to_admin_login_page()">
+                <span>Given the admin navigates to admin login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_is_logged_in_to_admin_panel()">
+                <span>Given the admin is logged in to admin panel</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_navigates_to_orders_management_section()">
+                <span>When the admin navigates to orders management section</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_enters_order_number_in_search(java.lang.String)">
+                <span>And the admin enters order number "ORD123456" in search</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_clicks_search_button()">
+                <span>And the admin clicks search button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_should_see_the_matching_order()">
+                <span>Then the admin should see the matching order</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="200"><span class="badge log pass-bg mr-2">Pass</span>Filter orders by status</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_navigates_to_admin_login_page()">
+                <span>Given the admin navigates to admin login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_is_logged_in_to_admin_panel()">
+                <span>Given the admin is logged in to admin panel</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_navigates_to_orders_management_section()">
+                <span>When the admin navigates to orders management section</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_selects_filter_by_status(java.lang.String)">
+                <span>And the admin selects filter by status "Pending"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.only_orders_with_status_should_be_displayed(java.lang.String)">
+                <span>Then only orders with "Pending" status should be displayed</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="208"><span class="badge log pass-bg mr-2">Pass</span>Filter orders by date range</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_navigates_to_admin_login_page()">
+                <span>Given the admin navigates to admin login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_is_logged_in_to_admin_panel()">
+                <span>Given the admin is logged in to admin panel</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_navigates_to_orders_management_section()">
+                <span>When the admin navigates to orders management section</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_sets_date_range_from_to(java.lang.String,java.lang.String)">
+                <span>And the admin sets date range from "2024-01-01" to "2024-12-31"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_applies_filter()">
+                <span>And the admin applies filter</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.orders_within_the_date_range_should_be_displayed()">
+                <span>Then orders within the date range should be displayed</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="217"><span class="badge log pass-bg mr-2">Pass</span>Cancel order</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_navigates_to_admin_login_page()">
+                <span>Given the admin navigates to admin login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_is_logged_in_to_admin_panel()">
+                <span>Given the admin is logged in to admin panel</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.there_is_a_pending_order()">
+                <span>And there is a pending order</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_navigates_to_orders_management_section()">
+                <span>When the admin navigates to orders management section</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_clicks_on_the_order()">
+                <span>And the admin clicks on the order</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_clicks_cancel_order_button()">
+                <span>And the admin clicks cancel order button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_enters_cancellation_reason(java.lang.String)">
+                <span>And the admin enters cancellation reason "Out of stock"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_confirms_cancellation()">
+                <span>And the admin confirms cancellation</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_order_should_be_cancelled()">
+                <span>Then the order should be cancelled</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_customer_should_be_notified()">
+                <span>And the customer should be notified</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="230"><span class="badge log pass-bg mr-2">Pass</span>Process refund for returned order</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_navigates_to_admin_login_page()">
+                <span>Given the admin navigates to admin login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_is_logged_in_to_admin_panel()">
+                <span>Given the admin is logged in to admin panel</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.there_is_a_return_request()">
+                <span>And there is a return request</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_navigates_to_returns_section()">
+                <span>When the admin navigates to returns section</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_approves_the_return()">
+                <span>And the admin approves the return</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_processes_refund()">
+                <span>And the admin processes refund</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_refund_should_be_processed()">
+                <span>Then the refund should be processed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_order_status_should_update_to(java.lang.String)">
+                <span>And the order status should update to "Refunded"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="241"><span class="badge log pass-bg mr-2">Pass</span>View all customers</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_navigates_to_admin_login_page()">
+                <span>Given the admin navigates to admin login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_is_logged_in_to_admin_panel()">
+                <span>Given the admin is logged in to admin panel</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_navigates_to_customers_section()">
+                <span>When the admin navigates to customers section</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_should_see_list_of_all_customers()">
+                <span>Then the admin should see list of all customers</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.each_customer_should_display_name()">
+                <span>And each customer should display name</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.each_customer_should_display_email()">
+                <span>And each customer should display email</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.each_customer_should_display_registration_date()">
+                <span>And each customer should display registration date</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.each_customer_should_display_total_orders()">
+                <span>And each customer should display total orders</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="252"><span class="badge log pass-bg mr-2">Pass</span>View customer details</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_navigates_to_admin_login_page()">
+                <span>Given the admin navigates to admin login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_is_logged_in_to_admin_panel()">
+                <span>Given the admin is logged in to admin panel</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_navigates_to_customers_section()">
+                <span>When the admin navigates to customers section</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_clicks_on_a_customer()">
+                <span>And the admin clicks on a customer</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_should_see_customer_profile()">
+                <span>Then the admin should see customer profile</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.profile_should_show_customer_orders_history()">
+                <span>And profile should show customer orders history</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.profile_should_show_customer_addresses()">
+                <span>And profile should show customer addresses</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.profile_should_show_total_spent()">
+                <span>And profile should show total spent</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="263"><span class="badge log pass-bg mr-2">Pass</span>Search customers</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_navigates_to_admin_login_page()">
+                <span>Given the admin navigates to admin login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_is_logged_in_to_admin_panel()">
+                <span>Given the admin is logged in to admin panel</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_navigates_to_customers_section()">
+                <span>When the admin navigates to customers section</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_enters_customer_email_in_search()">
+                <span>And the admin enters customer email in search</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_clicks_search()">
+                <span>And the admin clicks search</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_matching_customer_should_be_displayed()">
+                <span>Then the matching customer should be displayed</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="272"><span class="badge log pass-bg mr-2">Pass</span>Deactivate customer account</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_navigates_to_admin_login_page()">
+                <span>Given the admin navigates to admin login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_is_logged_in_to_admin_panel()">
+                <span>Given the admin is logged in to admin panel</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_navigates_to_customers_section()">
+                <span>When the admin navigates to customers section</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_clicks_on_a_customer()">
+                <span>And the admin clicks on a customer</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_clicks_deactivate_account_button()">
+                <span>And the admin clicks deactivate account button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_confirms_deactivation()">
+                <span>And the admin confirms deactivation</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_customer_account_should_be_deactivated()">
+                <span>Then the customer account should be deactivated</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_customer_should_not_be_able_to_login()">
+                <span>And the customer should not be able to login</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="283"><span class="badge log pass-bg mr-2">Pass</span>Update homepage banner</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_navigates_to_admin_login_page()">
+                <span>Given the admin navigates to admin login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_is_logged_in_to_admin_panel()">
+                <span>Given the admin is logged in to admin panel</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_navigates_to_content_management()">
+                <span>When the admin navigates to content management</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_clicks_on_homepage_settings()">
+                <span>And the admin clicks on homepage settings</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_uploads_new_banner_image()">
+                <span>And the admin uploads new banner image</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_enters_banner_text(java.lang.String)">
+                <span>And the admin enters banner text "Special Offer"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_clicks_save_changes()">
+                <span>And the admin clicks save changes</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_homepage_banner_should_be_updated()">
+                <span>Then the homepage banner should be updated</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="294"><span class="badge log pass-bg mr-2">Pass</span>Update featured products section</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_navigates_to_admin_login_page()">
+                <span>Given the admin navigates to admin login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_is_logged_in_to_admin_panel()">
+                <span>Given the admin is logged in to admin panel</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_navigates_to_content_management()">
+                <span>When the admin navigates to content management</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_clicks_on_featured_products_settings()">
+                <span>And the admin clicks on featured products settings</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_selects_products_for_featured_section()">
+                <span>And the admin selects products for featured section</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_saves_the_selection()">
+                <span>And the admin saves the selection</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_featured_products_should_be_updated_on_homepage()">
+                <span>Then the featured products should be updated on homepage</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="304"><span class="badge log pass-bg mr-2">Pass</span>Update website information</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_navigates_to_admin_login_page()">
+                <span>Given the admin navigates to admin login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_is_logged_in_to_admin_panel()">
+                <span>Given the admin is logged in to admin panel</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_navigates_to_website_settings()">
+                <span>When the admin navigates to website settings</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_updates_company_phone_number()">
+                <span>And the admin updates company phone number</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_updates_company_email()">
+                <span>And the admin updates company email</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_updates_company_address()">
+                <span>And the admin updates company address</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_clicks_save_settings()">
+                <span>And the admin clicks save settings</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_website_information_should_be_updated()">
+                <span>Then the website information should be updated</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="315"><span class="badge log pass-bg mr-2">Pass</span>Add new category</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_navigates_to_admin_login_page()">
+                <span>Given the admin navigates to admin login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_is_logged_in_to_admin_panel()">
+                <span>Given the admin is logged in to admin panel</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_navigates_to_categories_section()">
+                <span>When the admin navigates to categories section</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_clicks_add_new_category()">
+                <span>And the admin clicks add new category</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_enters_category_name(java.lang.String)">
+                <span>And the admin enters category name "Luxury Watches"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_enters_category_description()">
+                <span>And the admin enters category description</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_clicks_save_category()">
+                <span>And the admin clicks save category</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_category_should_be_created_successfully()">
+                <span>Then the category should be created successfully</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="326"><span class="badge log pass-bg mr-2">Pass</span>Edit category</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_navigates_to_admin_login_page()">
+                <span>Given the admin navigates to admin login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_is_logged_in_to_admin_panel()">
+                <span>Given the admin is logged in to admin panel</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.there_are_existing_categories()">
+                <span>And there are existing categories</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_navigates_to_categories_section()">
+                <span>When the admin navigates to categories section</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_clicks_edit_on_a_category()">
+                <span>And the admin clicks edit on a category</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_updates_category_name()">
+                <span>And the admin updates category name</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_saves_changes()">
+                <span>And the admin saves changes</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_category_should_be_updated()">
+                <span>Then the category should be updated</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="337"><span class="badge log pass-bg mr-2">Pass</span>Delete category</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_navigates_to_admin_login_page()">
+                <span>Given the admin navigates to admin login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_is_logged_in_to_admin_panel()">
+                <span>Given the admin is logged in to admin panel</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.there_is_a_category_with_no_products()">
+                <span>And there is a category with no products</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_navigates_to_categories_section()">
+                <span>When the admin navigates to categories section</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_clicks_delete_on_the_category()">
+                <span>And the admin clicks delete on the category</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_confirms_deletion()">
+                <span>And the admin confirms deletion</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_category_should_be_deleted()">
+                <span>Then the category should be deleted</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="347"><span class="badge log pass-bg mr-2">Pass</span>View dashboard statistics</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_navigates_to_admin_login_page()">
+                <span>Given the admin navigates to admin login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_is_logged_in_to_admin_panel()">
+                <span>Given the admin is logged in to admin panel</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_is_on_the_dashboard()">
+                <span>When the admin is on the dashboard</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_should_see_total_orders_count()">
+                <span>Then the admin should see total orders count</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_should_see_total_revenue()">
+                <span>And the admin should see total revenue</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_should_see_total_customers()">
+                <span>And the admin should see total customers</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_should_see_pending_orders_count()">
+                <span>And the admin should see pending orders count</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_should_see_recent_orders_list()">
+                <span>And the admin should see recent orders list</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="358"><span class="badge log pass-bg mr-2">Pass</span>View sales chart</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_navigates_to_admin_login_page()">
+                <span>Given the admin navigates to admin login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_is_logged_in_to_admin_panel()">
+                <span>Given the admin is logged in to admin panel</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_is_on_the_dashboard()">
+                <span>When the admin is on the dashboard</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_should_see_sales_chart()">
+                <span>Then the admin should see sales chart</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_chart_should_display_sales_data()">
+                <span>And the chart should display sales data</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_can_select_different_time_periods()">
+                <span>And the admin can select different time periods</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="367"><span class="badge log pass-bg mr-2">Pass</span>Generate sales report</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_navigates_to_admin_login_page()">
+                <span>Given the admin navigates to admin login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_is_logged_in_to_admin_panel()">
+                <span>Given the admin is logged in to admin panel</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_navigates_to_reports_section()">
+                <span>When the admin navigates to reports section</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_selects_sales_report()">
+                <span>And the admin selects sales report</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_sets_date_range()">
+                <span>And the admin sets date range</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_clicks_generate_report()">
+                <span>And the admin clicks generate report</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_sales_report_should_be_generated()">
+                <span>Then the sales report should be generated</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_report_should_show_total_sales()">
+                <span>And the report should show total sales</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_report_should_show_order_count()">
+                <span>And the report should show order count</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="379"><span class="badge log pass-bg mr-2">Pass</span>Export orders to CSV</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_navigates_to_admin_login_page()">
+                <span>Given the admin navigates to admin login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_is_logged_in_to_admin_panel()">
+                <span>Given the admin is logged in to admin panel</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_navigates_to_orders_section()">
+                <span>When the admin navigates to orders section</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_clicks_export_button()">
+                <span>And the admin clicks export button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_selects_csv_format()">
+                <span>And the admin selects CSV format</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_orders_should_be_exported_to_csv_file()">
+                <span>Then the orders should be exported to CSV file</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="388"><span class="badge log pass-bg mr-2">Pass</span>Admin logout</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_navigates_to_admin_login_page()">
+                <span>Given the admin navigates to admin login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_is_logged_in_to_admin_panel()">
+                <span>Given the admin is logged in to admin panel</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_clicks_on_logout_button()">
+                <span>When the admin clicks on logout button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_should_be_logged_out()">
+                <span>Then the admin should be logged out</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_should_be_redirected_to_login_page()">
+                <span>And the admin should be redirected to login page</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">13</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>4</span>
+</span>
+<p class="name">@CustomerManagement</p>
+<p class="duration text-sm">4 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@CustomerManagement</h4>
+<span status="pass" class='badge log pass-bg'>4 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='241'>View all customers</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.View all customers</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='252'>View customer details</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.View customer details</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='263'>Search customers</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Search customers</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='272'>Deactivate customer account</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Deactivate customer account</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>9</span>
+</span>
+<p class="name">@ProductManagement</p>
+<p class="duration text-sm">9 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@ProductManagement</h4>
+<span status="pass" class='badge log pass-bg'>9 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:18 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='28'>Add new product</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Add new product</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:18 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='40'>Edit existing product</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Edit existing product</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:18 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='53'>Delete product</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Delete product</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:18 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='64'>Update product stock</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Update product stock</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='75'>Set product as featured</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Set product as featured</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='86'>Add product with missing required fields</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Add product with missing required fields</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='96'>Add product with missing required fields</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Add product with missing required fields</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='106'>Add product with missing required fields</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Add product with missing required fields</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='116'>Add product with missing required fields</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Add product with missing required fields</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>38</span>
+</span>
+<p class="name">@AdminTest</p>
+<p class="duration text-sm">38 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@AdminTest</h4>
+<span status="pass" class='badge log pass-bg'>38 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:14 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Successful admin login with valid credentials</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Successful admin login with valid credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:18 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='11'>Admin login with invalid credentials</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Admin login with invalid credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:18 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='20'>Admin forgot password</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Admin forgot password</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:18 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='28'>Add new product</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Add new product</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:18 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='40'>Edit existing product</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Edit existing product</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:18 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='53'>Delete product</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Delete product</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:18 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='64'>Update product stock</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Update product stock</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='75'>Set product as featured</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Set product as featured</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='86'>Add product with missing required fields</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Add product with missing required fields</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='96'>Add product with missing required fields</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Add product with missing required fields</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='106'>Add product with missing required fields</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Add product with missing required fields</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='116'>Add product with missing required fields</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Add product with missing required fields</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='126'>View all orders</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.View all orders</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='138'>View order details</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.View order details</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='151'>Update order status</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Update order status</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='164'>Change order status through workflow</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Change order status through workflow</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='173'>Change order status through workflow</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Change order status through workflow</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='182'>Change order status through workflow</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Change order status through workflow</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='191'>Search orders by order number</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Search orders by order number</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='200'>Filter orders by status</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Filter orders by status</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='208'>Filter orders by date range</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Filter orders by date range</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='217'>Cancel order</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Cancel order</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='230'>Process refund for returned order</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Process refund for returned order</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='241'>View all customers</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.View all customers</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='252'>View customer details</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.View customer details</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='263'>Search customers</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Search customers</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='272'>Deactivate customer account</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Deactivate customer account</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='283'>Update homepage banner</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Update homepage banner</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='294'>Update featured products section</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Update featured products section</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='304'>Update website information</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Update website information</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='315'>Add new category</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Add new category</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='326'>Edit category</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Edit category</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='337'>Delete category</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Delete category</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='347'>View dashboard statistics</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.View dashboard statistics</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:20 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='358'>View sales chart</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.View sales chart</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:20 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='367'>Generate sales report</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Generate sales report</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:20 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='379'>Export orders to CSV</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Export orders to CSV</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:20 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='388'>Admin logout</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Admin logout</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>5</span>
+</span>
+<p class="name">@Smoke</p>
+<p class="duration text-sm">5 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Smoke</h4>
+<span status="pass" class='badge log pass-bg'>5 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:14 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Successful admin login with valid credentials</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Successful admin login with valid credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:18 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='28'>Add new product</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Add new product</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='126'>View all orders</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.View all orders</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='347'>View dashboard statistics</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.View dashboard statistics</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:20 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='388'>Admin logout</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Admin logout</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>32</span>
+</span>
+<p class="name">@Regression</p>
+<p class="duration text-sm">32 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Regression</h4>
+<span status="pass" class='badge log pass-bg'>32 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:14 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Successful admin login with valid credentials</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Successful admin login with valid credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:18 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='20'>Admin forgot password</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Admin forgot password</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:18 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='28'>Add new product</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Add new product</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:18 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='40'>Edit existing product</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Edit existing product</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:18 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='53'>Delete product</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Delete product</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:18 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='64'>Update product stock</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Update product stock</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='75'>Set product as featured</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Set product as featured</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='126'>View all orders</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.View all orders</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='138'>View order details</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.View order details</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='151'>Update order status</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Update order status</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='164'>Change order status through workflow</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Change order status through workflow</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='173'>Change order status through workflow</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Change order status through workflow</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='182'>Change order status through workflow</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Change order status through workflow</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='191'>Search orders by order number</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Search orders by order number</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='200'>Filter orders by status</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Filter orders by status</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='208'>Filter orders by date range</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Filter orders by date range</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='217'>Cancel order</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Cancel order</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='230'>Process refund for returned order</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Process refund for returned order</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='241'>View all customers</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.View all customers</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='252'>View customer details</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.View customer details</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='263'>Search customers</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Search customers</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='272'>Deactivate customer account</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Deactivate customer account</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='283'>Update homepage banner</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Update homepage banner</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='294'>Update featured products section</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Update featured products section</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='304'>Update website information</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Update website information</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='315'>Add new category</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Add new category</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='326'>Edit category</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Edit category</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='337'>Delete category</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Delete category</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='347'>View dashboard statistics</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.View dashboard statistics</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:20 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='358'>View sales chart</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.View sales chart</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:20 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='367'>Generate sales report</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Generate sales report</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:20 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='379'>Export orders to CSV</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Export orders to CSV</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@AdminLogout</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@AdminLogout</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:20 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='388'>Admin logout</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Admin logout</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@Dashboard</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Dashboard</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='347'>View dashboard statistics</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.View dashboard statistics</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:20 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='358'>View sales chart</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.View sales chart</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>3</span>
+</span>
+<p class="name">@CategoryManagement</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@CategoryManagement</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='315'>Add new category</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Add new category</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='326'>Edit category</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Edit category</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='337'>Delete category</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Delete category</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@Reports</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Reports</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:20 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='367'>Generate sales report</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Generate sales report</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:20 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='379'>Export orders to CSV</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Export orders to CSV</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>5</span>
+</span>
+<p class="name">@NegativeTesting</p>
+<p class="duration text-sm">5 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@NegativeTesting</h4>
+<span status="pass" class='badge log pass-bg'>5 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:18 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='11'>Admin login with invalid credentials</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Admin login with invalid credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='86'>Add product with missing required fields</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Add product with missing required fields</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='96'>Add product with missing required fields</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Add product with missing required fields</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='106'>Add product with missing required fields</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Add product with missing required fields</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='116'>Add product with missing required fields</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Add product with missing required fields</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>3</span>
+</span>
+<p class="name">@ContentManagement</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@ContentManagement</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='283'>Update homepage banner</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Update homepage banner</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='294'>Update featured products section</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Update featured products section</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='304'>Update website information</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Update website information</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>11</span>
+</span>
+<p class="name">@OrderManagement</p>
+<p class="duration text-sm">11 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@OrderManagement</h4>
+<span status="pass" class='badge log pass-bg'>11 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='126'>View all orders</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.View all orders</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='138'>View order details</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.View order details</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='151'>Update order status</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Update order status</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='164'>Change order status through workflow</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Change order status through workflow</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='173'>Change order status through workflow</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Change order status through workflow</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='182'>Change order status through workflow</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Change order status through workflow</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='191'>Search orders by order number</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Search orders by order number</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='200'>Filter orders by status</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Filter orders by status</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='208'>Filter orders by date range</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Filter orders by date range</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='217'>Cancel order</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Cancel order</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='230'>Process refund for returned order</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Process refund for returned order</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>3</span>
+</span>
+<p class="name">@AdminLogin</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@AdminLogin</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:14 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Successful admin login with valid credentials</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Successful admin login with valid credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:18 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='11'>Admin login with invalid credentials</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Admin login with invalid credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:42:18 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='20'>Admin forgot password</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Admin forgot password</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
