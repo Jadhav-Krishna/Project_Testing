@@ -367,8 +367,7 @@ public class ProductBrowsingSteps {
         boolean added = productsPage.isWishlistConfirmationDisplayed() ||
                        productDetailsPage.isWishlistIconFilled() ||
                        driver.getCurrentUrl().contains("login") ||
-cd C:\Users\krish\OneDrive\Desktop\Project_Testing\Ecommerce-Testing\ecommerce-testing
-mvn test -DsuiteXmlFile=testng-ProductBrowsing.xml                       driver.getCurrentUrl().contains("wishlist") ||
+                       driver.getCurrentUrl().contains("wishlist") ||
                        true; // Wishlist action always completes (even if redirect)
         Assert.assertTrue(added, "Wishlist action taken");
     }

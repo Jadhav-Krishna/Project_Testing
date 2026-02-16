@@ -39,6 +39,9 @@ public class AdminSteps {
 
 	@Then("the admin should be logged in successfully")
 	public void the_admin_should_be_logged_in_successfully() {
+		if (adminPage.isErrorMessageDisplayed()){
+			throw new RuntimeException("Error message Displayed");
+		}
 	}
 
 	@Then("the admin should see the admin dashboard")
@@ -48,6 +51,15 @@ public class AdminSteps {
 		}
 	}
 
+	@When("the admin enters invalid admin email")
+	public void the_admin_enters_invalid_admin_email() {
+		adminPage.enterEmail("invalid@email.com");
+	}
+
+	@When("the admin enters invalid admin password")
+	public void the_admin_enters_invalid_admin_password() {
+		adminPage.enterPassword("invalidPassword");
+	}
 	@Given("the admin is logged in to admin panel")
 	public void the_admin_is_logged_in_to_admin_panel() {
 		adminPage.login(ConfigReader.getAdminEmail(), ConfigReader.getAdminPassword());
@@ -142,10 +154,16 @@ public class AdminSteps {
 
 	@Then("the admin should see admin login error message")
 	public void the_admin_should_see_admin_login_error_message() {
+		if (!adminPage.isErrorMessageDisplayed()){
+			throw new RuntimeException("Login error message not displayed");
+		}
 	}
 
 	@Then("the admin should not be able to access dashboard")
 	public void the_admin_should_not_be_able_to_access_dashboard() {
+		if (adminDashboardPage.isDashboardDisplayed()){
+			throw new RuntimeException("Dashboard is visible when it should not be");
+		}
 	}
 
 	@When("the admin clicks on logout button")
