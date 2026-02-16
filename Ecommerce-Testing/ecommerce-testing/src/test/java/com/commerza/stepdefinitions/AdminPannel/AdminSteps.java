@@ -3,9 +3,9 @@ package com.commerza.stepdefinitions.AdminPannel;
 import org.openqa.selenium.WebDriver;
 
 import com.commerza.pages.AdminLoginPage;
+import com.commerza.pages.AdminDashboardPage;
 import com.commerza.utils.ConfigReader;
 import com.commerza.utils.DriverManager;
-import com.commerza.utils.ElementUtils;
 
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.*;
@@ -13,16 +13,39 @@ import io.cucumber.java.en.*;
 public class AdminSteps {
 	private WebDriver driver;
 	private AdminLoginPage adminPage;
+	private AdminDashboardPage adminDashboardPage;
 
 	public AdminSteps() {
 		this.driver = DriverManager.getDriver();
 
 		this.adminPage = new AdminLoginPage(this.driver);
+		this.adminDashboardPage = new AdminDashboardPage(this.driver);
 	}
 
 	@Given("the admin navigates to admin login page")
 	public void the_admin_navigates_to_admin_login_page() {
 		adminPage.navigateToAdminLoginPage(ConfigReader.getAdminUrl());
+	}
+
+	@When("the admin enters valid admin email")
+	public void the_admin_enters_admin_email() {
+		adminPage.enterEmail(ConfigReader.getAdminEmail());
+	}
+
+	@When("the admin enters valid admin password")
+	public void the_admin_enters_admin_password() {
+		adminPage.enterPassword(ConfigReader.getAdminPassword());
+	}
+
+	@Then("the admin should be logged in successfully")
+	public void the_admin_should_be_logged_in_successfully() {
+	}
+
+	@Then("the admin should see the admin dashboard")
+	public void the_admin_should_see_the_admin_dashboard() {
+		if (!adminDashboardPage.isDashboardDisplayed()){
+			throw new RuntimeException("Dashboard not visible");
+		}
 	}
 
 	@Given("the admin is logged in to admin panel")
@@ -110,16 +133,6 @@ public class AdminSteps {
 
 	@Then("the admin should see password reset email confirmation")
 	public void the_admin_should_see_password_reset_email_confirmation() {
-	}
-
-	@When("the admin enters admin email {string}")
-	public void the_admin_enters_admin_email(String string) {
-		adminPage.enterEmail(string);
-	}
-
-	@When("the admin enters admin password {string}")
-	public void the_admin_enters_admin_password(String string) {
-		adminPage.enterPassword(string);
 	}
 
 	@When("the admin clicks on admin login button")
@@ -417,14 +430,6 @@ public class AdminSteps {
 
 	@Then("the product should appear in featured section")
 	public void the_product_should_appear_in_featured_section() {
-	}
-
-	@Then("the admin should be logged in successfully")
-	public void the_admin_should_be_logged_in_successfully() {
-	}
-
-	@Then("the admin should see the admin dashboard")
-	public void the_admin_should_see_the_admin_dashboard() {
 	}
 
 	@When("the admin navigates to content management")

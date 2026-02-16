@@ -9,16 +9,16 @@ Feature: Admin Panel and Order Management
 
   @AdminLogin @Smoke @Regression
   Scenario: Successful admin login with valid credentials
-    When the admin enters admin email "admin@commerza.com"
-    And the admin enters admin password "Admin@123"
+    When the admin enters valid admin email
+    And the admin enters valid admin password
     And the admin clicks on admin login button
     Then the admin should be logged in successfully
     And the admin should see the admin dashboard
 
   @AdminLogin @NegativeTesting
   Scenario: Admin login with invalid credentials
-    When the admin enters admin email "invalid@commerza.com"
-    And the admin enters admin password "WrongPassword"
+    When the admin enters invalid admin email
+    And the admin enters invalid admin password
     And the admin clicks on admin login button
     Then the admin should see admin login error message
     And the admin should not be able to access dashboard

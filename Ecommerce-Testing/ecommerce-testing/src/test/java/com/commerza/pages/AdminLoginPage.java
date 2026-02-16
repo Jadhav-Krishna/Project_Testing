@@ -25,7 +25,7 @@ public class AdminLoginPage {
     }
     
     public void navigateToAdminLoginPage(String baseUrl) {
-        driver.get(baseUrl);
+        driver.get(baseUrl + "admin-login.html");
     }
     
     public void enterEmail(String email) {
