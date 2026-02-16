@@ -4,17 +4,17 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
-        features = "src/test/resources/features/shopping-cart",
+        features = "src/test/resources/features/ShoppingCart",
         glue = {
-                "com.commerza.stepdefinitions.shopping-cart",
-                "com.commerza.stepdefinitions.team1",
+                "com.commerza.stepdefinitions.ShoppingCart",
+                "com.commerza.stepdefinitions.ProductBrowsing",
                 "com.commerza.hooks"
         },
         tags = "@ShoppingCart",
         plugin = {
                 "pretty",
-                "html:test-output/reports/shopping-cart/cucumber-report.html",
-                "json:test-output/reports/shopping-cart/cucumber.json",
+                "html:test-output/reports/ShoppingCart/cucumber-report.html",
+                "json:test-output/reports/ShoppingCart/cucumber.json",
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
         },
         monochrome = true,

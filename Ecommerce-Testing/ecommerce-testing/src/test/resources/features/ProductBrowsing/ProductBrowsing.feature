@@ -1,4 +1,4 @@
-@Team2 @Products
+@ProductBrowsing @Products
 Feature: Product Browsing and Search
   As a customer
   I want to browse and search for products
