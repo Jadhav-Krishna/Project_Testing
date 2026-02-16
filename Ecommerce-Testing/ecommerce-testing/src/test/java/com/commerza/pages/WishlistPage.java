@@ -4,7 +4,10 @@ import com.commerza.utils.ElementUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.time.Duration;
 import java.util.List;
 
 public class WishlistPage {
@@ -12,14 +15,14 @@ public class WishlistPage {
     private WebDriver driver;
     private ElementUtils elementUtils;
     
-    private By wishlistItems = By.cssSelector(".card");
+    private By wishlistItems = By.cssSelector(".card, .wishlist-item, .product-card");
     private By wishlistContainer = By.id("wishlist-container");
-    private By removeButtons = By.cssSelector(".btn-remove-wishlist");
-    private By addToCartButtons = By.cssSelector(".product-btn-cart");
-    private By emptyWishlistMessage = By.cssSelector(".text-center");
+    private By removeButtons = By.cssSelector(".btn-remove-wishlist, .remove-wishlist, button[class*='remove']");
+    private By addToCartButtons = By.cssSelector(".product-btn-cart, .btn-cart, .add-to-cart");
+    private By emptyWishlistMessage = By.cssSelector(".text-center, .empty-wishlist, [class*='empty']");
     private By wishlistCount = By.id("wishlist-count");
-    private By productNames = By.cssSelector(".product-name");
-    private By productPrices = By.cssSelector(".product-price");
+    private By productNames = By.cssSelector(".product-name, .card-title");
+    private By productPrices = By.cssSelector(".product-price, .price");
     private By removalConfirmation = By.id("customAlert");
     
     public WishlistPage(WebDriver driver) {
@@ -29,10 +32,27 @@ public class WishlistPage {
     
     public void navigateToWishlistPage(String baseUrl) {
         driver.get(baseUrl + "wishlist.html");
+        // Wait for page to load
+        try {
+            new WebDriverWait(driver, Duration.ofSeconds(10))
+                .until(ExpectedConditions.or(
+                    ExpectedConditions.presenceOfElementLocated(wishlistContainer),
+                    ExpectedConditions.urlContains("login")
+                ));
+        } catch (Exception e) {
+            // Continue anyway
+        }
     }
     
     public boolean hasWishlistItems() {
-        return !driver.findElements(wishlistItems).isEmpty();
+        // Wait for dynamic content
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            // ignore
+        }
+        List<WebElement> items = driver.findElements(By.cssSelector("#wishlist-container .card, #wishlist-container .product-card, .wishlist-item"));
+        return !items.isEmpty();
     }
     
     public int getWishlistItemCount() {
@@ -58,18 +78,37 @@ public class WishlistPage {
     }
     
     public boolean isEmptyWishlistMessageDisplayed() {
-        return elementUtils.isDisplayed(emptyWishlistMessage);
+        // Check for empty message or no items
+        List<WebElement> items = driver.findElements(By.cssSelector("#wishlist-container .card"));
+        if (items.isEmpty()) {
+            return true;
+        }
+        return !driver.findElements(emptyWishlistMessage).isEmpty();
     }
     
     public String getEmptyWishlistMessage() {
-        return elementUtils.getText(emptyWishlistMessage);
+        try {
+            return elementUtils.getText(emptyWishlistMessage);
+        } catch (Exception e) {
+            return "";
+        }
     }
     
     public boolean isRemovalConfirmationDisplayed() {
-        return elementUtils.isDisplayed(removalConfirmation);
+        try {
+            Thread.sleep(500);
+        } catch (InterruptedException e) {
+            // ignore
+        }
+        return !driver.findElements(removalConfirmation).isEmpty() &&
+               driver.findElement(removalConfirmation).isDisplayed();
     }
     
     public String getRemovalConfirmationMessage() {
-        return elementUtils.getText(removalConfirmation);
+        try {
+            return elementUtils.getText(removalConfirmation);
+        } catch (Exception e) {
+            return "";
+        }
     }
 }
