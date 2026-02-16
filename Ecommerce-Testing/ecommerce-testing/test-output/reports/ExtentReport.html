@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Selenium Cucumber Test Automation Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Feb 16, 2026 13:10:36</span></a>
+<a href="#"><span class="badge badge-primary">Feb 16, 2026 14:24:15</span></a>
 </li>
 </ul>
 </div>
@@ -66,13 +66,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Feb 16, 2026 13:10:36</h3>
+<h3>Feb 16, 2026 14:24:15</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Feb 16, 2026 13:10:57</h3>
+<h3>Feb 16, 2026 14:24:28</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -162,7 +162,7 @@
 </div></div>
 <script>
 var timeline = {
-"Admin Panel and Order Management":18.28
+"Admin Panel and Order Management":11.243
 };
 </script>
 <div class="row">
@@ -172,6 +172,14 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
+<td>@Regression</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
 <td>@AdminTest</td>
 <td>1</td>
 <td>0</td>
@@ -180,7 +188,7 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
-<td>@NegativeTesting</td>
+<td>@Smoke</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -266,7 +274,7 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@AdminTest</a><a class="dropdown-item" href="#">@NegativeTesting</a><a class="dropdown-item" href="#">@AdminLogin</a>
+<a class="dropdown-item" href="#">@Regression</a><a class="dropdown-item" href="#">@AdminTest</a><a class="dropdown-item" href="#">@Smoke</a><a class="dropdown-item" href="#">@AdminLogin</a>
 </ul>
 </li>
 </ul>
@@ -279,7 +287,7 @@ eventsCount: 5,
           <div class="test-detail">
             <p class="name">Admin Panel and Order Management</p>
             <p class="text-sm">
-              <span>1:10:39 PM</span> / <span>00:00:18:280</span>
+              <span>2:24:16 PM</span> / <span>00:00:11:243</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -288,9 +296,9 @@ eventsCount: 5,
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">Admin Panel and Order Management</h5>
-<span class='badge badge-success'>02.16.2026 1:10:39 PM</span>
-<span class='badge badge-danger'>02.16.2026 1:10:57 PM</span>
-<span class='badge badge-default'>00:00:18:280</span>
+<span class='badge badge-success'>02.16.2026 2:24:16 PM</span>
+<span class='badge badge-danger'>02.16.2026 2:24:28 PM</span>
+<span class='badge badge-default'>00:00:11:243</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -304,7 +312,7 @@ So that I can operate the e-commerce platform effectively</div>
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Admin login with invalid credentials</div>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Successful admin login with valid credentials</div>
       </div>
     </div>
         <div class="collapse">
@@ -314,13 +322,13 @@ So that I can operate the e-commerce platform effectively</div>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_enters_invalid_admin_email()">
-                <span>When the admin enters invalid admin email</span>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_enters_admin_email()">
+                <span>When the admin enters valid admin email</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_enters_invalid_admin_password()">
-                <span>And the admin enters invalid admin password</span>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_enters_admin_password()">
+                <span>And the admin enters valid admin password</span>
       <div>
       </div>
               </div>
@@ -329,13 +337,13 @@ So that I can operate the e-commerce platform effectively</div>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_should_see_admin_login_error_message()">
-                <span>Then the admin should see admin login error message</span>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_should_be_logged_in_successfully()">
+                <span>Then the admin should be logged in successfully</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_should_not_be_able_to_access_dashboard()">
-                <span>And the admin should not be able to access dashboard</span>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_should_see_the_admin_dashboard()">
+                <span>And the admin should see the admin dashboard</span>
       <div>
       </div>
               </div>
@@ -358,10 +366,46 @@ So that I can operate the e-commerce platform effectively</div>
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">3</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">4</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Regression</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Regression</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:24:16 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Successful admin login with valid credentials</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.Successful admin login with valid credentials</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
@@ -386,11 +430,11 @@ So that I can operate the e-commerce platform effectively</div>
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>13:10:39 PM</td>
+<td>14:24:16 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>Admin login with invalid credentials</a>
+<a href="#" class="linked" test-id='1' id='2'>Successful admin login with valid credentials</a>
 <div class="">
-<span class="badge badge-default">Admin Panel and Order Management.Admin login with invalid credentials</span>
+<span class="badge badge-default">Admin Panel and Order Management.Successful admin login with valid credentials</span>
 </div>
 </td>
 </tr>
@@ -403,12 +447,12 @@ So that I can operate the e-commerce platform effectively</div>
 <span class="meta">
 <span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@NegativeTesting</p>
+<p class="name">@Smoke</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@NegativeTesting</h4>
+<h4>@Smoke</h4>
 <span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -422,11 +466,11 @@ So that I can operate the e-commerce platform effectively</div>
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>13:10:39 PM</td>
+<td>14:24:16 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>Admin login with invalid credentials</a>
+<a href="#" class="linked" test-id='1' id='2'>Successful admin login with valid credentials</a>
 <div class="">
-<span class="badge badge-default">Admin Panel and Order Management.Admin login with invalid credentials</span>
+<span class="badge badge-default">Admin Panel and Order Management.Successful admin login with valid credentials</span>
 </div>
 </td>
 </tr>
@@ -458,11 +502,11 @@ So that I can operate the e-commerce platform effectively</div>
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>13:10:39 PM</td>
+<td>14:24:16 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>Admin login with invalid credentials</a>
+<a href="#" class="linked" test-id='1' id='2'>Successful admin login with valid credentials</a>
 <div class="">
-<span class="badge badge-default">Admin Panel and Order Management.Admin login with invalid credentials</span>
+<span class="badge badge-default">Admin Panel and Order Management.Successful admin login with valid credentials</span>
 </div>
 </td>
 </tr>
