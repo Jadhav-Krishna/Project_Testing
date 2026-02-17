@@ -5,19 +5,17 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.util.List;
 
 public class AdminProductManagementPage {
-
+	private static final Logger logger = LogManager.getLogger(AdminProductManagementPage.class);
 	private WebDriver driver;
 	private ElementUtils elementUtils;
 
 	private By addProductButton = By.id("addNewProductBtn");
-	private By productsTab = By.id("products-tab");
-	private By productsList = By.id("productsSection");
-	private By productsTable = By.cssSelector("#productsTableBody");
-	private By productItems = By.cssSelector(".product-row");
 
 	private By productNameField = By.id("productName");
 	private By productSection = By.cssSelector("#productSectionMenu li a");
@@ -29,22 +27,44 @@ public class AdminProductManagementPage {
 	private By productDescriptionField = By.id("productDescription");
 	private By saveProductButton = By.id("saveProductBtn");
 
-	private By updateProductButton = By.cssSelector(".btn-update-product");
-	private By editButtons = By.cssSelector(".btn-edit");
-	private By deleteButtons = By.cssSelector(".btn-delete");
-	private By confirmDeleteButton = By.cssSelector(".btn-confirm-delete");
-	private By successMessage = By.id("adminAlert");
-	private By validationError = By.id("adminAlert");
-	private By featuredCheckbox = By.id("productFeatured");
-	private By saveChangesButton = By.cssSelector(".btn-primary");
+	private By productCount = By.id("productCount");
+	private By productEditButtons = By.cssSelector("#productsTable tbody tr button[title='Edit']");
+	private By productDeleteButtons = By.cssSelector("#productsTable tbody tr button[title='Delete']");
+
+	private By helperActionButtons = By.cssSelector("div.helper-actions button");
+
 
 	public AdminProductManagementPage(WebDriver driver) {
 		this.driver = driver;
 		this.elementUtils = new ElementUtils(driver);
 	}
 
+	public List<WebElement> getProductDeleteButtons() {
+		return driver.findElements(productDeleteButtons);
+	}
+
+	public List<WebElement> getProductEditButtons() {
+		return driver.findElements(productEditButtons);
+	}
+
 	public void navigateToProductMangementPage() {
-		elementUtils.jsExec("document.getElementById('products-tab').click();");
+		logger.info("finding product management page button");
+		new Actions(driver).moveToElement(driver.findElements(helperActionButtons).get(0)).click().perform();
+		logger.info("navigation Button clicked");
+	}
+
+	public int getProductCount() {
+		try {
+			String text = elementUtils.getText(productCount);
+			if (text == null) {
+				logger.warn("No Products found");
+				return 0;
+			}
+			return Integer.parseInt(text.replaceAll("[^0-9]", ""));
+		} catch (NumberFormatException e) {
+			logger.warn("No Products found");
+			return 0;
+		}
 	}
 
 	public void setProductSection(int section) {
@@ -103,54 +123,41 @@ public class AdminProductManagementPage {
 	}
 
 	public void clickUpdateProduct() {
-		elementUtils.click(updateProductButton);
+		logger.debug("Implement function");
 	}
 
 	public boolean isSuccessMessageDisplayed() {
-		return elementUtils.isDisplayed(successMessage);
+		logger.debug("Implement function");
+		return false;
 	}
 
 	public String getSuccessMessage() {
-		return elementUtils.getText(successMessage);
-	}
-
-	public boolean areProductsDisplayed() {
-		return !driver.findElements(productItems).isEmpty();
+		logger.debug("Implement function");
+		return " ";
 	}
 
 	public void clickEditProduct(int index) {
-		List<WebElement> editButtonsList = driver.findElements(editButtons);
-		if (index < editButtonsList.size()) {
-			editButtonsList.get(index).click();
-		}
+		logger.debug("Implement function");
 	}
 
 	public void clickDeleteProduct(int index) {
-		List<WebElement> deleteButtonsList = driver.findElements(deleteButtons);
-		if (index < deleteButtonsList.size()) {
-			deleteButtonsList.get(index).click();
-		}
+		logger.debug("Implement function");
 	}
 
 	public void confirmDeletion() {
-		elementUtils.click(confirmDeleteButton);
+		logger.debug("Implement function");
 	}
 
 	public boolean isValidationErrorDisplayed() {
-		return elementUtils.isDisplayed(validationError);
+		logger.debug("Implement function");
+		return false;
 	}
 
 	public void markAsFeatured() {
-		if (!driver.findElement(featuredCheckbox).isSelected()) {
-			elementUtils.click(featuredCheckbox);
-		}
+		logger.debug("Implement function");
 	}
 
 	public void clickSaveChanges() {
-		elementUtils.click(saveChangesButton);
-	}
-
-	public int getProductCount() {
-		return driver.findElements(productItems).size();
+		logger.debug("Implement function");
 	}
 }

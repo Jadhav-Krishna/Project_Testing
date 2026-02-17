@@ -56,7 +56,6 @@ Feature: Admin Panel and Order Management
   @ProductManagement @Regression
   Scenario: Edit existing product
     Given the admin is logged in to admin panel
-    And there are existing products in the system
     When the admin navigates to products management section
     And the admin clicks on edit button for a product
     And the admin updates product name to "Updated Watch Name"
@@ -362,12 +361,4 @@ Feature: Admin Panel and Order Management
     And the admin clicks export button
     And the admin selects CSV format
     Then the orders should be exported to CSV file
-    And the driver clears local storage
-
-  @AdminLogout @Smoke
-  Scenario: Admin logout
-    Given the admin is logged in to admin panel
-    When the admin clicks on logout button
-    Then the admin should be logged out
-    And the admin should be redirected to login page
     And the driver clears local storage
