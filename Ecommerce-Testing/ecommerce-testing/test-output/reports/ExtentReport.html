@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Selenium Cucumber Test Automation Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Feb 17, 2026 14:25:16</span></a>
+<a href="#"><span class="badge badge-primary">Feb 17, 2026 18:23:33</span></a>
 </li>
 </ul>
 </div>
@@ -57,6 +57,11 @@
 <span class="ico"><i class="fa fa-tag"></i></span>
 </a>
 </li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
 </ul>
 </div>
 </div>      <div class="vcontainer">
@@ -66,25 +71,25 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Feb 17, 2026 14:25:16</h3>
+<h3>Feb 17, 2026 18:23:33</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Feb 17, 2026 14:25:31</h3>
+<h3>Feb 17, 2026 18:23:44</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Features Passed</p>
-<h3>1</h3>
+<h3>0</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Features Failed</p>
-<h3>0</h3>
+<h3>1</h3>
 </div></div>
 </div>
 </div>
@@ -100,12 +105,12 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'>
-<b>1</b> features passed
+<div><small data-tooltip='0%'>
+<b>0</b> features passed
 </small>
 </div>
 <div>
-<small data-tooltip='0%'><b>0</b> features failed,
+<small data-tooltip='100%'><b>1</b> features failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -123,9 +128,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>1</b> scenarios passed</small></div>
+<div><small data-tooltip='0%'><b>0</b> scenarios passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> scenarios failed,
+<small data-tooltip='100%'><b>1</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -143,10 +148,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>7</b> steps passed</small></div>
+<div><small data-tooltip='36%'><b>4</b> steps passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> steps failed,
-<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+<small data-tooltip='9%'><b>1</b> steps failed,
+<b>6</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -162,7 +167,7 @@
 </div></div>
 <script>
 var timeline = {
-"Admin Panel and Order Management":13.527
+"Admin Panel and Order Management":9.071
 };
 </script>
 <div class="row">
@@ -172,36 +177,36 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>@Smoke</td>
+<td>@Regression</td>
+<td>0</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@OrderManagement</td>
 <td>0</td>
-<td>100%</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
 </tr>
 <tr>
 <td>@AdminTest</td>
+<td>0</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td>0</td>
-<td>100%</td>
+<td>0%</td>
 </tr>
 <tr>
-<td>@ProductManagement</td>
+<td>@Smoke</td>
+<td>0</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@Regression</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
+<td>0%</td>
 </tr>
 </tbody>
 </table></div>
@@ -238,21 +243,21 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 1,
-failParent: 0,
+passParent: 0,
+failParent: 1,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 1,
-failChild: 0,
+passChild: 0,
+failChild: 1,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 7,
-failGrandChild: 0,
+passGrandChild: 4,
+failGrandChild: 1,
 warningGrandChild: 0,
-skipGrandChild: 0,
+skipGrandChild: 6,
 infoGrandChild: 0,
 eventsCount: 5,
 };
@@ -266,7 +271,7 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -274,31 +279,31 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@Smoke</a><a class="dropdown-item" href="#">@AdminTest</a><a class="dropdown-item" href="#">@ProductManagement</a><a class="dropdown-item" href="#">@Regression</a>
+<a class="dropdown-item" href="#">@Regression</a><a class="dropdown-item" href="#">@OrderManagement</a><a class="dropdown-item" href="#">@AdminTest</a><a class="dropdown-item" href="#">@Smoke</a>
 </ul>
 </li>
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="pass" test-id="1"
+        <li class="test-item"  status="fail" test-id="1"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">Admin Panel and Order Management</p>
             <p class="text-sm">
-              <span>2:25:17 PM</span> / <span>00:00:13:527</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>6:23:35 PM</span> / <span>00:00:09:071</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Admin Panel and Order Management</h5>
-<span class='badge badge-success'>02.17.2026 2:25:17 PM</span>
-<span class='badge badge-danger'>02.17.2026 2:25:31 PM</span>
-<span class='badge badge-default'>00:00:13:527</span>
+<h5 class="test-status text-fail">Admin Panel and Order Management</h5>
+<span class='badge badge-success'>02.17.2026 6:23:35 PM</span>
+<span class='badge badge-danger'>02.17.2026 6:23:44 PM</span>
+<span class='badge badge-default'>00:00:09:071</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -312,10 +317,13 @@ So that I can operate the e-commerce platform effectively</div>
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Delete product</div>
+        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>View all orders</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
       </div>
     </div>
-        <div class="collapse">
+        <div class="">
           <div class="card-body">
               <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_navigates_to_admin_login_page()">
                 <span>Given the admin navigates to admin login page</span>
@@ -327,28 +335,59 @@ So that I can operate the e-commerce platform effectively</div>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_navigates_to_products_management_section()">
-                <span>When the admin navigates to products management section</span>
+              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_navigates_to_orders_management_section()">
+                <span>When the admin navigates to orders management section</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_clicks_on_delete_button_for_a_product()">
-                <span>And the admin clicks on delete button for a product</span>
+              <div class="step fail-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_should_see_list_of_all_orders()">
+                <span>Then the admin should see list of all orders</span>
       <div>
+        <textarea disabled class="code-block">java.lang.RuntimeException: Orders table not displayed
+	at com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_should_see_list_of_all_orders(AdminSteps.java:354)
+	at ✽.the admin should see list of all orders(file:///home/harshit_y/projects/Project_Testing/Ecommerce-Testing/ecommerce-testing/src/test/resources/features/AdminPannel/Admin.feature:118)
+</textarea>
+      
       </div>
               </div>
-              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_admin_confirms_deletion()">
-                <span>And the admin confirms deletion</span>
-      <div>
+              <div class="step skip-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.each_order_should_display_order_number()">
+                <span>And each order should display order number</span>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_product_should_be_deleted_successfully()">
-                <span>Then the product should be deleted successfully</span>
-      <div>
+              <div class="step skip-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.each_order_should_display_customer_name()">
+                <span>And each order should display customer name</span>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_driver_clears_local_storage()">
+              <div class="step skip-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.each_order_should_display_order_date()">
+                <span>And each order should display order date</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.each_order_should_display_order_status()">
+                <span>And each order should display order status</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.each_order_should_display_total_amount()">
+                <span>And each order should display total amount</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.commerza.stepdefinitions.AdminPannel.AdminSteps.the_driver_clears_local_storage()">
                 <span>And the driver clears local storage</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>com.commerza.hooks.Hooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>View all orders
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded1.png' src="../screenshots/embedded1.png">
+    
+    </div></div>
+</div>
       <div>
       </div>
               </div>
@@ -378,115 +417,7 @@ So that I can operate the e-commerce platform effectively</div>
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@Smoke</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@Smoke</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>14:25:17 PM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='2'>Delete product</a>
-<div class="">
-<span class="badge badge-default">Admin Panel and Order Management.Delete product</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@AdminTest</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@AdminTest</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>14:25:17 PM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='2'>Delete product</a>
-<div class="">
-<span class="badge badge-default">Admin Panel and Order Management.Delete product</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@ProductManagement</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@ProductManagement</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>14:25:17 PM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='2'>Delete product</a>
-<div class="">
-<span class="badge badge-default">Admin Panel and Order Management.Delete product</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
+<span class='badge log badge-danger'>1</span>
 </span>
 <p class="name">@Regression</p>
 <p class="duration text-sm">1 tests</p>
@@ -494,7 +425,7 @@ So that I can operate the e-commerce platform effectively</div>
 <div class="test-contents d-none">
 <div class="info">
 <h4>@Regression</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -505,13 +436,173 @@ So that I can operate the e-commerce platform effectively</div>
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>14:25:17 PM</td>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:23:35 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>Delete product</a>
+<a href="#" class="linked" test-id='1' id='2'>View all orders</a>
 <div class="">
-<span class="badge badge-default">Admin Panel and Order Management.Delete product</span>
+<span class="badge badge-default">Admin Panel and Order Management.View all orders</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@OrderManagement</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@OrderManagement</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:23:35 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>View all orders</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.View all orders</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@AdminTest</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@AdminTest</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:23:35 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>View all orders</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.View all orders</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@Smoke</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Smoke</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:23:35 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>View all orders</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.View all orders</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">java.lang.RuntimeException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.RuntimeException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:23:43 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='7'>Then the admin should see list of all orders</a>
+<div class="">
+<span class="badge badge-default">Admin Panel and Order Management.View all orders.Then the admin should see list of all orders</span>
 </div>
 </td>
 </tr>

@@ -40,7 +40,7 @@ Feature: Admin Panel and Order Management
     And the admin enters product details
       | Field            | Value                          |
       | Product Name     | Premium Automatic Watch        |
-      | Section          | Automatic                      |
+      | Section          | THE AUTOMATIC VAULT            |
       | Price            | 4500                           |
       | SalePrice        | 2500                           |
       | Stock Quantity   | 50                             |
@@ -65,7 +65,7 @@ Feature: Admin Panel and Order Management
     And the updated details should be saved
     And the driver clears local storage
 
-  @ProductManagement @Regression @Smoke 
+  @ProductManagement @Regression 
   Scenario: Delete product
     Given the admin is logged in to admin panel
     When the admin navigates to products management section
@@ -80,7 +80,7 @@ Feature: Admin Panel and Order Management
     When the admin navigates to products management section
     And the admin clicks on a product to edit
     And the admin updates stock quantity to "100"
-    And the admin clicks save changes
+    And the admin clicks update product button
     Then the stock quantity should be updated
     And the updated stock should be reflected
     And the driver clears local storage
@@ -95,7 +95,7 @@ Feature: Admin Panel and Order Management
     Then the product should appear in featured section
     And the driver clears local storage
 
-  @ProductManagement @NegativeTesting
+  @ProductManagement @NegativeTesting @Smoke
   Scenario Outline: Add product with missing required fields
     Given the admin is logged in to admin panel
     When the admin navigates to products management section
@@ -109,7 +109,6 @@ Feature: Admin Panel and Order Management
       | field           |
       | Product Name    |
       | Price           |
-      | Category        |
       | Stock Quantity  |
 
   @OrderManagement @Smoke @Regression
