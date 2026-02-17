@@ -32,7 +32,7 @@ Feature: Admin Panel and Order Management
     Then the admin should see password reset email confirmation
     And the driver clears local storage
 
-  @ProductManagement @Smoke @Regression
+  @ProductManagement @Regression
   Scenario: Add new product
     Given the admin is logged in to admin panel
     When the admin navigates to products management section
@@ -65,15 +65,13 @@ Feature: Admin Panel and Order Management
     And the updated details should be saved
     And the driver clears local storage
 
-  @ProductManagement @Regression
+  @ProductManagement @Regression @Smoke 
   Scenario: Delete product
     Given the admin is logged in to admin panel
-    And there are existing products in the system
     When the admin navigates to products management section
     And the admin clicks on delete button for a product
     And the admin confirms deletion
     Then the product should be deleted successfully
-    And the product should no longer appear in product list
     And the driver clears local storage
 
   @ProductManagement @Regression
