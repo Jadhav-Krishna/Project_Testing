@@ -40,11 +40,13 @@ Feature: Admin Panel and Order Management
     And the admin enters product details
       | Field            | Value                          |
       | Product Name     | Premium Automatic Watch        |
-      | SKU              | PAW-001                        |
+      | Section          | Automatic                      |
       | Price            | 4500                           |
-      | Category         | Automatic                      |
-      | Description      | Elegant automatic watch        |
+      | SalePrice        | 2500                           |
       | Stock Quantity   | 50                             |
+      | Movement Type    | Quartz                         |
+      | Image Path       | Image placeholder              |
+      | Description      | Elegant automatic watch        |
     And the admin uploads product images
     And the admin clicks save product button
     Then the product should be added successfully

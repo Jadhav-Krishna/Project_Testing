@@ -1,6 +1,7 @@
 package com.commerza.utils;
 
 import org.openqa.selenium.*;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.io.FileHandler;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -22,7 +23,8 @@ public class ElementUtils {
     }
     
     public void click(By locator) {
-        waitForElementToBeClickable(locator).click();
+        WebElement elem = waitForElementToBeClickable(locator);
+				new Actions(driver).moveToElement(elem).click().perform();
     }
     
     public void sendKeys(By locator, String text) {
@@ -69,6 +71,10 @@ public class ElementUtils {
         ((JavascriptExecutor) driver).executeScript("arguments[0].click();", element);
     }
     
+    public void jsExec(String code) {
+        ((JavascriptExecutor) driver).executeScript(code);
+    }
+
     public String takeScreenshot(String testName) {
         String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
         String screenshotName = testName + "_" + timestamp + ".png";

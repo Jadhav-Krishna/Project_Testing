@@ -9,7 +9,7 @@ import io.cucumber.testng.CucumberOptions;
                 "com.commerza.stepdefinitions.AdminPannel",
                 "com.commerza.hooks"
         },
-        tags = "@AdminTest and @AdminLogin",
+        tags = "@AdminTest and @ProductManagement and @Smoke",
         plugin = {
                 "pretty",
                 "html:test-output/reports/ProductBrowsing/cucumber-report.html",
