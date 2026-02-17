@@ -14,6 +14,7 @@ Feature: Admin Panel and Order Management
     And the admin clicks on admin login button
     Then the admin should be logged in successfully
     And the admin should see the admin dashboard
+    And the driver clears local storage
 
   @AdminLogin @NegativeTesting
   Scenario: Admin login with invalid credentials
@@ -22,13 +23,14 @@ Feature: Admin Panel and Order Management
     And the admin clicks on admin login button
     Then the admin should see admin login error message
     And the admin should not be able to access dashboard
+    And the driver clears local storage
 
   @AdminLogin @Regression
   Scenario: Admin forgot password
     When the admin clicks on admin forgot password link
-    And the admin enters admin email for reset "admin@commerza.com"
     And the admin clicks on send admin reset link
     Then the admin should see password reset email confirmation
+    And the driver clears local storage
 
   @ProductManagement @Smoke @Regression
   Scenario: Add new product
@@ -38,15 +40,18 @@ Feature: Admin Panel and Order Management
     And the admin enters product details
       | Field            | Value                          |
       | Product Name     | Premium Automatic Watch        |
-      | SKU              | PAW-001                        |
+      | Section          | Automatic                      |
       | Price            | 4500                           |
-      | Category         | Automatic                      |
-      | Description      | Elegant automatic watch        |
+      | SalePrice        | 2500                           |
       | Stock Quantity   | 50                             |
+      | Movement Type    | Quartz                         |
+      | Image Path       | Image placeholder              |
+      | Description      | Elegant automatic watch        |
     And the admin uploads product images
     And the admin clicks save product button
     Then the product should be added successfully
     And the admin should see success message "Product added"
+    And the driver clears local storage
 
   @ProductManagement @Regression
   Scenario: Edit existing product
@@ -59,6 +64,7 @@ Feature: Admin Panel and Order Management
     And the admin clicks update product button
     Then the product should be updated successfully
     And the updated details should be saved
+    And the driver clears local storage
 
   @ProductManagement @Regression
   Scenario: Delete product
@@ -69,6 +75,7 @@ Feature: Admin Panel and Order Management
     And the admin confirms deletion
     Then the product should be deleted successfully
     And the product should no longer appear in product list
+    And the driver clears local storage
 
   @ProductManagement @Regression
   Scenario: Update product stock
@@ -79,6 +86,7 @@ Feature: Admin Panel and Order Management
     And the admin clicks save changes
     Then the stock quantity should be updated
     And the updated stock should be reflected
+    And the driver clears local storage
 
   @ProductManagement @Regression
   Scenario: Set product as featured
@@ -88,6 +96,7 @@ Feature: Admin Panel and Order Management
     And the admin marks product as featured
     And the admin saves changes
     Then the product should appear in featured section
+    And the driver clears local storage
 
   @ProductManagement @NegativeTesting
   Scenario Outline: Add product with missing required fields
@@ -97,6 +106,7 @@ Feature: Admin Panel and Order Management
     And the admin leaves "<field>" empty
     And the admin clicks save product button
     Then the admin should see validation error for "<field>"
+    And the driver clears local storage
 
     Examples:
       | field           |
@@ -115,6 +125,7 @@ Feature: Admin Panel and Order Management
     And each order should display order date
     And each order should display order status
     And each order should display total amount
+    And the driver clears local storage
 
   @OrderManagement @Regression
   Scenario: View order details
@@ -127,6 +138,7 @@ Feature: Admin Panel and Order Management
     And order details should include shipping address
     And order details should include order items
     And order details should include payment method
+    And the driver clears local storage
 
   @OrderManagement @Regression
   Scenario: Update order status
@@ -138,6 +150,7 @@ Feature: Admin Panel and Order Management
     And the admin saves the changes
     Then the order status should be updated to "Processing"
     And the customer should receive status update notification
+    And the driver clears local storage
 
   @OrderManagement @Regression
   Scenario Outline: Change order status through workflow
@@ -146,6 +159,7 @@ Feature: Admin Panel and Order Management
     When the admin updates the order status to "<newStatus>"
     Then the order status should change to "<newStatus>"
     And the status timeline should be updated
+    And the driver clears local storage
 
     Examples:
       | currentStatus | newStatus   |
@@ -160,6 +174,7 @@ Feature: Admin Panel and Order Management
     And the admin enters order number "ORD123456" in search
     And the admin clicks search button
     Then the admin should see the matching order
+    And the driver clears local storage
 
   @OrderManagement @Regression
   Scenario: Filter orders by status
@@ -167,6 +182,7 @@ Feature: Admin Panel and Order Management
     When the admin navigates to orders management section
     And the admin selects filter by status "Pending"
     Then only orders with "Pending" status should be displayed
+    And the driver clears local storage
 
   @OrderManagement @Regression
   Scenario: Filter orders by date range
@@ -175,6 +191,7 @@ Feature: Admin Panel and Order Management
     And the admin sets date range from "2024-01-01" to "2024-12-31"
     And the admin applies filter
     Then orders within the date range should be displayed
+    And the driver clears local storage
 
   @OrderManagement @Regression
   Scenario: Cancel order
@@ -187,6 +204,7 @@ Feature: Admin Panel and Order Management
     And the admin confirms cancellation
     Then the order should be cancelled
     And the customer should be notified
+    And the driver clears local storage
 
   @OrderManagement @Regression
   Scenario: Process refund for returned order
@@ -197,6 +215,7 @@ Feature: Admin Panel and Order Management
     And the admin processes refund
     Then the refund should be processed
     And the order status should update to "Refunded"
+    And the driver clears local storage
 
   @CustomerManagement @Regression
   Scenario: View all customers
@@ -207,6 +226,7 @@ Feature: Admin Panel and Order Management
     And each customer should display email
     And each customer should display registration date
     And each customer should display total orders
+    And the driver clears local storage
 
   @CustomerManagement @Regression
   Scenario: View customer details
@@ -217,6 +237,7 @@ Feature: Admin Panel and Order Management
     And profile should show customer orders history
     And profile should show customer addresses
     And profile should show total spent
+    And the driver clears local storage
 
   @CustomerManagement @Regression
   Scenario: Search customers
@@ -225,6 +246,7 @@ Feature: Admin Panel and Order Management
     And the admin enters customer email in search
     And the admin clicks search
     Then the matching customer should be displayed
+    And the driver clears local storage
 
   @CustomerManagement @Regression
   Scenario: Deactivate customer account
@@ -235,6 +257,7 @@ Feature: Admin Panel and Order Management
     And the admin confirms deactivation
     Then the customer account should be deactivated
     And the customer should not be able to login
+    And the driver clears local storage
 
   @ContentManagement @Regression
   Scenario: Update homepage banner
@@ -245,6 +268,7 @@ Feature: Admin Panel and Order Management
     And the admin enters banner text "Special Offer"
     And the admin clicks save changes
     Then the homepage banner should be updated
+    And the driver clears local storage
 
   @ContentManagement @Regression
   Scenario: Update featured products section
@@ -254,6 +278,7 @@ Feature: Admin Panel and Order Management
     And the admin selects products for featured section
     And the admin saves the selection
     Then the featured products should be updated on homepage
+    And the driver clears local storage
 
   @ContentManagement @Regression
   Scenario: Update website information
@@ -264,6 +289,7 @@ Feature: Admin Panel and Order Management
     And the admin updates company address
     And the admin clicks save settings
     Then the website information should be updated
+    And the driver clears local storage
 
   @CategoryManagement @Regression
   Scenario: Add new category
@@ -274,6 +300,7 @@ Feature: Admin Panel and Order Management
     And the admin enters category description
     And the admin clicks save category
     Then the category should be created successfully
+    And the driver clears local storage
 
   @CategoryManagement @Regression
   Scenario: Edit category
@@ -284,6 +311,7 @@ Feature: Admin Panel and Order Management
     And the admin updates category name
     And the admin saves changes
     Then the category should be updated
+    And the driver clears local storage
 
   @CategoryManagement @Regression
   Scenario: Delete category
@@ -293,6 +321,7 @@ Feature: Admin Panel and Order Management
     And the admin clicks delete on the category
     And the admin confirms deletion
     Then the category should be deleted
+    And the driver clears local storage
 
   @Dashboard @Smoke @Regression
   Scenario: View dashboard statistics
@@ -303,6 +332,7 @@ Feature: Admin Panel and Order Management
     And the admin should see total customers
     And the admin should see pending orders count
     And the admin should see recent orders list
+    And the driver clears local storage
 
   @Dashboard @Regression
   Scenario: View sales chart
@@ -311,6 +341,7 @@ Feature: Admin Panel and Order Management
     Then the admin should see sales chart
     And the chart should display sales data
     And the admin can select different time periods
+    And the driver clears local storage
 
   @Reports @Regression
   Scenario: Generate sales report
@@ -322,6 +353,7 @@ Feature: Admin Panel and Order Management
     Then the sales report should be generated
     And the report should show total sales
     And the report should show order count
+    And the driver clears local storage
 
   @Reports @Regression
   Scenario: Export orders to CSV
@@ -330,6 +362,7 @@ Feature: Admin Panel and Order Management
     And the admin clicks export button
     And the admin selects CSV format
     Then the orders should be exported to CSV file
+    And the driver clears local storage
 
   @AdminLogout @Smoke
   Scenario: Admin logout
@@ -337,3 +370,4 @@ Feature: Admin Panel and Order Management
     When the admin clicks on logout button
     Then the admin should be logged out
     And the admin should be redirected to login page
+    And the driver clears local storage
