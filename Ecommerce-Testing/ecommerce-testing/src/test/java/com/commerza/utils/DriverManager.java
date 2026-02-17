@@ -23,20 +23,12 @@ public class DriverManager {
     }
     
     private static void initializeDriver() {
-        System.setProperty("java.net.useSystemProxies", "false");
-        System.clearProperty("http.proxyHost");
-        System.clearProperty("http.proxyPort");
-        System.clearProperty("https.proxyHost");
-        System.clearProperty("https.proxyPort");
-
         String browser = ConfigReader.getBrowser().toLowerCase();
         boolean headless = ConfigReader.isHeadless();
         
         switch (browser) {
             case "chrome":
-                WebDriverManager.chromedriver()
-                        .avoidShutdownHook() 
-                        .setup();
+                WebDriverManager.chromedriver().setup();
                 ChromeOptions chromeOptions = new ChromeOptions();
                 if (headless) {
                     chromeOptions.addArguments("--headless");
@@ -48,9 +40,7 @@ public class DriverManager {
                 break;
                 
             case "firefox":
-                WebDriverManager.firefoxdriver()
-                        .avoidShutdownHook()
-                        .setup();
+                WebDriverManager.firefoxdriver().setup();
                 FirefoxOptions firefoxOptions = new FirefoxOptions();
                 if (headless) {
                     firefoxOptions.addArguments("--headless");
@@ -59,9 +49,7 @@ public class DriverManager {
                 break;
                 
             case "edge":
-                WebDriverManager.edgedriver()
-                        .avoidShutdownHook()
-                        .setup();
+                WebDriverManager.edgedriver().setup();
                 EdgeOptions edgeOptions = new EdgeOptions();
                 if (headless) {
                     edgeOptions.addArguments("--headless");
