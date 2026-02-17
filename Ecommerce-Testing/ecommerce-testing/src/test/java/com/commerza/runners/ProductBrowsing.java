@@ -7,7 +7,7 @@ import io.cucumber.testng.CucumberOptions;
         features = "src/test/resources/features/ProductBrowsing",
         glue = {
                 "com.commerza.stepdefinitions.ProductBrowsing",
-                "com.commerza.stepdefinitions.team1",
+                "com.commerza.stepdefinitions.authentication",
                 "com.commerza.hooks"
         },
         tags = "@ProductBrowsing",
