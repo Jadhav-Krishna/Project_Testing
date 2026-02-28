@@ -1,0 +1,9 @@
+<!DOCTYPE suite>
+<suite name="OrangeHRM Test Suite">
+
+    <test name="All OrangeHRM Tests">
+        <packages>
+            <package name="com.orangehrm.testing.tests.*"/>
+        </packages>
+    </test>
+</suite>
