@@ -1,7 +1,7 @@
 # OrangeHRM-Testing
 
 ## Project details
-| Project Name | travelbooking automation |
+| Project Name | OrangeHRM-Testing |
 | --- | --- |
 | Application Name | [OrangeHRM](https://opensource-demo.orangehrmlive.com/web/index.php/auth/login) |
 | Version | v1.0 |
