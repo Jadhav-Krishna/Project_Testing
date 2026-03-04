@@ -2,9 +2,13 @@ package com.orangehrm.testing.tests.adminviewsystemusers;
 
 import org.testng.annotations.Test;
 
-public class TC_01 {
+import com.orangehrm.testing.hooks.StartupTeardownhook;
+import com.orangehrm.testing.utils.ConfigLoader;
+
+public class TC_01 extends StartupTeardownhook {
 	@Test
 	public void initialize() {
-		System.out.println("initalization");
+		String loginURL = ConfigLoader.getProperty("auth_login_url");
+		System.out.println("URL: " + loginURL);
 	}
 }
