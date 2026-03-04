@@ -1,18 +1,18 @@
 package com.orangehrm.testing.hooks;
 
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 
-import com.orangehrm.testing.utils.DriverManger;
+import com.orangehrm.testing.utils.DriverManager;
 
 public class StartupTeardownhook {
-	@BeforeMethod
+	@BeforeClass
 	public void startUp() {
-		DriverManger.initDrive();
+		DriverManager.getDriver();
 	}
 	
-	@AfterMethod
+	@AfterClass
 	public void tearDown() {
-		DriverManger.quitDriver();
+		DriverManager.quitDriver();
 	}
 }

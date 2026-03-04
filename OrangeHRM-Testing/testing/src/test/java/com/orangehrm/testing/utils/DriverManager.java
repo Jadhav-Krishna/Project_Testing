@@ -8,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 
-public class DriverManger {
+public class DriverManager {
 	private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
 	public static void initDrive() {
 		String browser = ConfigLoader.getProperty("browser").toLowerCase();
@@ -36,6 +36,9 @@ public class DriverManger {
 	}
 	
 	public static WebDriver getDriver() {
+		if (driver.get() == null) {
+			initDrive();
+		}
 		return driver.get();
 	}
 	
